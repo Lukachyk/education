@@ -32,6 +32,7 @@ function App() {
       setHeader(rows[0]);
       setBook(rows.slice(1));
       setSelectedFile(file);
+      console.log(rows);
       // Получаем имя файла
       const fileName = file.name;
       setFileName(fileName);
@@ -90,7 +91,7 @@ function App() {
           {book.length === 0 ? "" : <FilterModeNav />}
           <Routes>
             <Route path="/abon" element={<CustomTable />} />
-            {/* <Route path="/24" element={<CustomTableDay />} /> */}
+            <Route path="/24" element={<CustomTableDay />} />
           </Routes>
         </Router>
       </MyContext.Provider>

@@ -39,3 +39,7 @@ html {
   align-self: center;
   align-items: center; */
 }
+
+.repeated-value {
+  background-color: yellow;
+}
