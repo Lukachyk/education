@@ -1,0 +1,7 @@
+.mode-nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  column-gap: 20px;
+}
