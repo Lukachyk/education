@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import MyContext from "./context";
+import FileInput from "./FileInput";
 
 function CustomTable() {
   const {
@@ -25,8 +26,8 @@ function CustomTable() {
       value
     );
 
-  const formatCellValueII = (value, index) =>
-    typeof value === "number" && value >= 0 && index > 4 && index % 2 === 1
+  const formatCellValueII = (value, index, el1, el2) =>
+    typeof value === "number" && value >= 0 && index > el1 && index % el2 === 1
       ? formatDate(value, {
           month: "2-digit",
           day: "2-digit",
@@ -36,6 +37,7 @@ function CustomTable() {
 
   return (
     <div>
+      <FileInput />
       <div className="menu">
         {selectedMonth !== null && (
           <div className="btn">
@@ -83,7 +85,7 @@ function CustomTable() {
                           : null,
                     }}
                   >
-                    {formatCellValueII(val, colIndex)}
+                    {formatCellValueII(val, colIndex, 4, 2)}
                   </td>
                 )
               )}
