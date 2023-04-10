@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./styles.css";
 import MyContext from "../context";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const FilterModeNav = () => {
   const { fileSelection, setFileSelection } = useContext(MyContext);
@@ -16,22 +16,22 @@ const FilterModeNav = () => {
               ""
             ) : (
               <li>
-                <Link to="/24">
+                <NavLink to="/24">
                   <button onClick={() => setFileSelection(false)}>
                     Суточники
                   </button>
-                </Link>
+                </NavLink>
               </li>
             )}
             {pathname === "/abon" ? (
               ""
             ) : (
               <li>
-                <Link to="/abon">
+                <NavLink to="/abon">
                   <button onClick={() => setFileSelection(false)}>
                     Абонемент
                   </button>
-                </Link>
+                </NavLink>
               </li>
             )}
           </ul>
