@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import MyContext from "./context";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function FileInput() {
   const { handleFileSelect, selectedFile, fileName, book, setFileSelection } =
@@ -31,9 +31,9 @@ function FileInput() {
       {book.length === 0 ? (
         ""
       ) : (
-        <Link to="http://localhost:3000">
+        <NavLink to="http://localhost:3000">
           <button onClick={choyseNewFile}>Загрузить новый файл</button>
-        </Link>
+        </NavLink>
       )}
     </div>
   );

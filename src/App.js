@@ -60,18 +60,6 @@ function App() {
     setReturnBtn(false);
   };
 
-  // const formatCellValue = (value, index) =>
-  //   typeof value === "number" && value >= 0 ? (
-  //     <button
-  //       className={selectedMonth === index ? "btn green" : "btn"}
-  //       onClick={() => setSelectedMonth(index)}
-  //     >
-  //       {formatDate(value, { month: "long" })}
-  //     </button>
-  //   ) : (
-  //     value
-  //   );
-
   const contextValue = {
     backupBook,
     setBackupBook,
