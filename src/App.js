@@ -77,7 +77,6 @@ function App() {
     setFileName,
     returnDataFile,
     unpaidSeats,
-    formatDate,
     handleFileSelect,
     fileSelection,
     setFileSelection,

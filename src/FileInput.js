@@ -31,7 +31,7 @@ function FileInput() {
       {book.length === 0 ? (
         ""
       ) : (
-        <NavLink to="http://localhost:3000">
+        <NavLink to="/">
           <button onClick={choyseNewFile}>Загрузить новый файл</button>
         </NavLink>
       )}
